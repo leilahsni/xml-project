@@ -1,0 +1,8 @@
+<pattern> {
+for $element in collection('corpus-titre-description.udpipe')//p/item/a[4][text()='ADJ']
+let $next_element := $element/parent::item/following-sibling::item[1]/a[4]
+let $preceding_element := $element/parent::item/preceding-sibling::item[1]/a[4]
+return if ($next_element='NOUN' and $preceding_element='DET')
+then <item>{concat($preceding_element/preceding-sibling::a[2], ' ', $element/preceding-sibling::a[2], ' ', $next_element/preceding-sibling::a[2])}</item>
+}
+</pattern>

@@ -1,0 +1,42 @@
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href='BAO1.css'>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <title>BAO1</title>
+    </head>
+    <body>
+        <div id="nav" onmouseout="$('#menu').hide();" onmouseover="$('#menu').show();">
+        <div id="dropdown">▼</div>
+        <ul id="menu">
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../main.html">Document Structuré</a></li>
+        <li><a href="./main.html">BAO – Accueil</a></li>
+        </ul>
+        </div>
+        <div id="body">
+        <h1>BAO1 – Extraire les contenus textuels des fils RSS du Monde</h1>
+        <p>Un flux RSS est un format de fichier qui permet la syndication de contenu trouvé sur le Web. Ces flux sont des fichiers XML qui permettent d'afficher du contenu d'autres pages de manière automatique. Pour cette raison, il souvent est utilisé par les sites de blog ou d'actualité. Le but de cette première partie est donc d'extraire les contenus textuels des fils RSS du journal Le Monde à partir d'un fichier XML. Pour cela, nous avons créer deux scripts, un script Perl et un script Python. Ces deux scripts effectuent la même tâche : ils récupèrent les données textuelles des fichiers XML contenus dans le dossier 2021. Ce dossier est constitué de plusieurs dossiers imbriqués, contenant des fichiers au format texte brut et XML. L'utilisation de la récurrence dans nos scripts permet donc de vérifier que ce que nous allons traiter est à la fois bien un fichier, et plus précisément un fichier XML.</p>
+        <br>
+        <p>Nous allons traiter de la rubrique culture (3246) tout au long de ces Boites à Outils.</p>
+        <h1>Code Perl</h1>
+        <p>On lance ce script de cette façon : <i>perl BAO1.pl ../2021 3246.</i> Il nous donne en sortie deux fichiers : un fichier nommé <a href="./Scripts/BAO/BAO1/pre-corpus-titre-description.xml" download="pre-corpus-titre-description.xml">pre-corpus-titre-description.xml</a> qui correspond aux titres et descriptions en format XML, et une sortie nommée <a href="./Scripts/BAO/BAO1/corpus-titre-description.txt" download="corpus-titre-description.txt">corpus-titre-description.txt</a> qui nous sort la même chose en format texte.</p>
+        <br>
+        <iframe title="Script Perl BAO1" src="./Scripts/BAO/BAO1/BAO1.pl" width="100%" height="100%"></iframe>
+        <h1>Code Python</h1>
+        <p>On lance ce script de cette façon : <i>python3 BAO1.py ../2021 3246.</i> Il nous donne en sortie deux fichiers : un fichier nommé <a href="./Scripts/BAO/BAO1/pre-corpus-titre-description.xml" download="pre-corpus-titre-description.xml">pre-corpus-titre-description.xml</a> qui correspond aux titres et descriptions en format XML, et une sortie nommée <a href="./Scripts/BAO/BAO1/corpus-titre-description.txt" download="corpus-titre-description.txt">corpus-titre-description.txt</a> qui nous sort la même chose en format texte.</p>
+        <br>
+        <iframe title="Script Python BAO1" src="./Scripts/BAO/BAO1/BAO1.py" width="100%" height="100%"></iframe>
+        <h1>Apperçu des résultats</h1>
+        <p>Voici un apperçu du fichier texte :</p>
+        <br>
+        <img src="./Scripts/BAO/BAO1/corpus-titre-description.png">
+        <br>
+        <p>Et voici un apperçu du fichier XML :</p>
+        <br>
+        <img src="./Scripts/BAO/BAO1/pre-corpus-titre-description.png">
+        <!-- <iframe title="Résultat XML" src="./Scripts/BAO/BAO1/pre-corpus-titre-description.xml" width="45%" height="45%"></iframe>
+        <iframe title="Résultat texte" src="./Scripts/BAO/BAO1/corpus-titre-description.txt" width="45%" height="45%"></iframe> -->
+        </div>
+    </body>
+</html>

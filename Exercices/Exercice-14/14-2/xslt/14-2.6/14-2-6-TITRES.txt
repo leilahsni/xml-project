@@ -1,0 +1,20 @@
+2740 NOUN ---[obj]--> VERB
+ 277 PRON ---[obj]--> VERB
+ 190 PROPN ---[obj]--> VERB
+  13 PRON ---[obj]--> NOUN
+   8 ADV ---[obj]--> VERB
+   7 PRON ---[obj]--> PRON
+   7 NOUN ---[obj]--> NOUN
+   5 PRON ---[obj]--> ADJ
+   4 PRON ---[obj]--> PROPN
+   4 NOUN ---[obj]--> X
+   4 ADJ ---[obj]--> VERB
+   3 VERB ---[obj]--> VERB
+   2 X ---[obj]--> VERB
+   2 PRON ---[obj]--> PUNCT
+   2 PART ---[obj]--> VERB
+   1 PRON ---[obj]--> X
+   1 PRON ---[obj]--> NUM
+   1 PRON ---[obj]--> ADV
+   1 NUM ---[obj]--> VERB
+   1 NOUN ---[obj]--> ADJ

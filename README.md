@@ -1,0 +1,3 @@
+# School Project - Website in XML/XSLT
+
+The goal of this project was to make a website with XML transformations in order to display the work we did with various XML files, as well as the work done to plot a graphics showing the dependency relations between a government and its dependant with [padagraph](https://github.com/padagraph/). The hosted link to the final website can be found [here](http://www.tal.univ-paris3.fr/plurital/travaux-2021-2022/ppe-s2/02/main.html).

@@ -1,0 +1,12 @@
+<sents> {
+for $element in collection('ulysse')/tmx/body/tu
+where ($element/tuv[@xml:lang='en']/seg[contains(text(),'parallel')])
+let $en := $element/tuv[@xml:lang='en']/seg/text()
+let $fr := $element/tuv[@xml:lang='fr']/seg/text()
+return
+<trans>
+  <en>{$en}</en>
+  <fr>{$fr}</fr>
+</trans>
+}
+</sents>

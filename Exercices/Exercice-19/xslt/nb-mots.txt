@@ -1,0 +1,6 @@
+   71381 -> francais.txt
+   65642 -> anglais.txt
+   
+Commandes : 
+cat francais.txt | wc -w > nb-mots.txt
+cat anglais.txt | wc -w >> nb-mots.txt

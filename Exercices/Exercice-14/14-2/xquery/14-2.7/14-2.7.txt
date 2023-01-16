@@ -1,0 +1,6 @@
+<rel>{
+for $dep in collection('corpus-titre-description.udpipe')//p/item/a[8][contains(text(),'subj')]
+let $position := $dep/preceding-sibling::a[1]
+let $gov := $dep/ancestor::p/item/a[1][text()=$position]
+return <item>{concat($dep/preceding-sibling::a[6], ' (lemme : ', $dep/preceding-sibling::a[5], ')' ,' --[subj]-- ', $gov/following-sibling::a[1], ' (lemme : ', $gov/following-sibling::a[2], ')')}</item>
+}</rel>

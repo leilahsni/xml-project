@@ -1,0 +1,11 @@
+<xquery-5> {
+for $element in collection('3208-2017-v2.xml')//element
+let $preceding_element := $element/preceding-sibling::element[1]
+let $next_element := $element/following-sibling::element[1]
+where $preceding_element/data[@type='type']='NOM' and contains($element/data[@type='type'],'PRP') and $next_element/data[@type='type']='NOM'
+return 
+<pattern>
+  {$preceding_element/data[@type='string']/text(), ' ', $element/data[@type='string']/text(), ' ', $next_element/data[@type='string']/text()}
+</pattern>
+}
+</xquery-5>

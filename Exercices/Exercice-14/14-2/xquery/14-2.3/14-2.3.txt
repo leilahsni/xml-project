@@ -1,0 +1,6 @@
+<descriptions> {
+for $string in doc("corpus-titre-description.udpipe")/baseudpipe/p[position() mod 2 = 0]
+let $description := string-join($string/item/a[2]/text(), ' ')
+return <description>{$description}</description>
+}
+</descriptions>

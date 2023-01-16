@@ -1,0 +1,24 @@
+Exercice 5 - Question 3
+
+Les mots contenant 'citoy' :
+
+citoyens : 72
+citoyen : 27
+citoyenne : 3
+concitoyens : 6
+citoyens.j' : 1
+citoyennes : 2
+
+Les mots contenant 'patriot' :
+
+patriote : 15
+patriotes.les : 1
+patriotes : 150
+patriotique : 7
+patriote.les : 1
+patriotiques : 8
+patriotisme : 19
+patriote.souvent : 1
+patriotes.je : 1
+patriotisme.quand : 1
+patriotiques.si : 1

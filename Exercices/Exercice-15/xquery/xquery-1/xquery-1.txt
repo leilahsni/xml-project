@@ -1,0 +1,3 @@
+for $item in collection('baseTrameurFromRhapsodie')//item
+where $item/contains(a[7],'OBJ')
+return $item/f/text()

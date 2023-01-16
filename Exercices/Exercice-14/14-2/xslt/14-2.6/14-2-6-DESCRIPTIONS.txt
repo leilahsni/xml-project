@@ -1,0 +1,24 @@
+7685 NOUN ---[obj]--> VERB
+ 806 PRON ---[obj]--> VERB
+ 346 PROPN ---[obj]--> VERB
+  26 PRON ---[obj]--> NOUN
+  24 PRON ---[obj]--> ADJ
+  16 ADJ ---[obj]--> VERB
+  15 NUM ---[obj]--> VERB
+  13 VERB ---[obj]--> VERB
+   7 PRON ---[obj]--> PUNCT
+   7 ADV ---[obj]--> VERB
+   6 NOUN ---[obj]--> NOUN
+   4 NOUN ---[obj]--> PRON
+   3 NOUN ---[obj]--> AUX
+   3 NOUN ---[obj]--> ADJ
+   2 PRON ---[obj]--> PROPN
+   1 X ---[obj]--> VERB
+   1 SCONJ ---[obj]--> VERB
+   1 PROPN ---[obj]--> NOUN
+   1 PRON ---[obj]--> PRON
+   1 PRON ---[obj]--> ADV
+   1 PART ---[obj]--> VERB
+   1 PART ---[obj]--> AUX
+   1 NOUN ---[obj]--> PUNCT
+   1 CCONJ ---[obj]--> VERB

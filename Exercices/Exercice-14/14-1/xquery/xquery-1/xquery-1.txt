@@ -1,0 +1,7 @@
+<xquery-1> {
+for $article in collection('3208-2017-v2.xml')//item/titre/article
+let $word := $article/element/data[@type='string']
+let $title := string-join($word,' ')
+return <title>{$title}</title>
+}
+</xquery-1>

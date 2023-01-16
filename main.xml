@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<body>
+    <menu><e>About Me</e>
+    <e>BAO</e> </menu>
+    <exercices>
+        <exercice n='3'>
+            Exercice 3 – TEI
+        </exercice>
+        <div n='3'>
+            <link n='1'></link>
+        </div>
+        <exercice  n='5'>
+            <num>Exercice 5 – DUCHN</num>
+            <div n='5'>
+                <link></link>
+            </div>
+        </exercice>
+        <exercice  n='8'>
+            <num>Exercice 8 – Regrouper des éléments</num>
+            <div n='8'>
+                <link></link>
+            </div>
+        </exercice>
+        <exercice  n='14'>
+            <num>Exercice 14 – Extraction dans les Fils RSS du Monde</num>
+            <div n='14'>
+                <link></link>
+            </div>
+        </exercice>
+        <exercice  n='15'>
+            <num>Exercice 15 – Patrons morphosyntaxiques / Relations de dépendance</num>
+            <div n='15'>
+                <link></link>
+            </div>
+        </exercice>
+        <exercice  n='19'>
+            <num>Exercice 19 – Ulysse pour finir</num>
+            <div n='19'>
+                <link></link>
+            </div>
+        </exercice>
+    </exercices>
+</body>

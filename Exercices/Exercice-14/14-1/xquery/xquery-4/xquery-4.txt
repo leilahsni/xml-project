@@ -1,0 +1,10 @@
+<xquery-4> {
+for $element in collection('3208-2017-v2.xml')//element
+let $next_element := $element/following-sibling::element[1]
+where $element/data[@type='type']='NOM' and $next_element/data[@type='type']='ADJ'
+return 
+<pattern>
+  {$element/data[@type='string']/text(), ' ', $next_element/data[@type='string']/text()}
+</pattern>
+}
+</xquery-4>

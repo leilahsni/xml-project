@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main" xml:lang="french" >Dictionnaire Universel contenant généralement tous les mots françois tant vieux que modernes, &amp; les Termes de toutes les sciences et des arts, 1690 : Une édition numérique</title>
+				<title type="sub">
+					C
+					<pc>.</pc>
+				</title>
+				<author key="Furetière, Antoine (1619-1688)" corresp="https://isni.org/isni/0000000108580490">
+					<forename>Antoine</forename>
+					<surname>Furetière</surname>
+				</author>
+				<respStmt>
+					<resp>Document annoté par</resp>
+					<name>
+						<forename>Leila</forename>
+						<surname>HASSANI</surname>
+					</name>
+				</respStmt>             
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Arnout et Reinier Leers</publisher>
+				<pubPlace>Amsterdam</pubPlace>
+				<date when="1690">1690</date>
+				<availability>
+					<p>Creative commons, no commercial use</p>
+					<licence target="https://creativecommons.org/licenses/by-nc-sa/2.0/fr/">CC BY-NC-SA</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblFull>
+					<titleStmt>
+						<title>Dictionnaire Universel</title>
+						<author>Antoine Furetière</author>
+					</titleStmt>
+					<publicationStmt>
+						<publisher>Arnout et Reinier Leers</publisher>
+						<pubPlace>La Haye et Rotterdam</pubPlace>
+						<date when="1701">1701</date>
+					</publicationStmt>
+				</biblFull>
+				<biblStruct type="book" xml:id="Furetière1701" corresp="http://zotero.org/groups/815103/items/J83QUNMR">
+					<monogr>
+						<title level="m">
+							Dictionnaire universel, contenant généralement tous les mots françois tant vieux que modernes &amp; les termes des sciences et des arts,.... Tome 1 / . Recueilli &amp; compilé par feu messire Antoine Furetière,... Seconde édition revüe, corrigée &amp; augmentée par Monsieur Basnage de Bauval
+						</title>
+						<author>
+							<forename>Antoine</forename>
+							<surname>Furetière</surname>
+						</author>
+						<imprint>
+							<pubPlace>La Haye et Rotterdam</pubPlace>
+							<biblScope unit="volume">Tome 1 A-D</biblScope>
+							<publisher>Arnoud et Reinier Leers</publisher>
+							<date>1701</date>
+							<note type="url">http://gallica.bnf.fr/ark:/12148/bpt6k5841680f</note>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div>
+				<head>CAR
+					<pc>.</pc>
+				</head>
+				<entry xml:lang="french" xml:id="carvi">
+					<form type="lemmaGrp">
+						<form type="lemma">
+							<orth>CARVI
+								<pc>.</pc>
+							</orth>
+						</form>
+						<gramGrp>
+							<gram type="number" value="singular">s</gram>
+							<pc>.</pc>
+							<gram type="gender" value="masculine">m</gram>
+							<pc>.</pc>
+						</gramGrp>
+					</form>
+					<sense xml:id="carvi_1">
+						<def>
+							C'est une plante qui n'est gueres differente du panais sauvage. Elle jette d'une seule racine plusieurs tiges quadrangulaires d'une coudée de haut, avec un bouquet garni de fleurs blanches, d'où sort une graine un peu plus longue que celle d'anis, anguleuse &amp; noirastre. Sa racine est longue, &amp; d'un goust acre &amp; amer. Le peuple appelle chervis, ce que les Apothicaires appellent carvi
+							<pc>.</pc>
+						</def>
+					</sense>
+					<etym>
+						En Latin carum
+						<pc>.</pc>
+					</etym>
+				</entry>
+			</div>
+			<div>
+				<head>CAS
+					<pc>.</pc>
+				</head>
+				<entry xml:lang="french" xml:id="castoreum">
+					<form type="lemmaGrp">
+						<form type="lemma">
+							<orth>CASTOREUM
+								<pc>.</pc>
+							</orth>
+						</form>
+						<gramGrp>
+							<gram type="number" value="singular">s
+								<pc>.</pc>
+							</gram>
+							<gram type="gender" value="masculine">m
+								<pc>.</pc>
+							</gram>
+						</gramGrp>
+					</form>
+					<sense xml:id="castoreum_1">
+						<def>
+							est un medicament composé de la liqueur enfermée dans de petites bourses que le castor a vers les aînes, qui est huileuse &amp; forte en odeur, mais qui n'est pas contenuë en ses genitoires, comme les Anciens ont crû, ainsi qu'on a monstré cy-dessus. Elle s'épaissit, &amp; se fait jaune comme miel ; &amp; si on la pend à la cheminée, elle devient semblable à la cire. Les Medecins reconnoissent de fort rares qualités au castoreum ; &amp; cependant quand il est noir de pourriture, c'est un poison.
+							<pc>.</pc>
+						</def>
+					</sense>
+				</entry>
+			</div>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,4 @@
+for $item in doc("corpus-titre-description.udpipe")//baseudpipe
+let $title := count($item/p[position() mod 2 = 0]) 
+let $description := count($item/p[position() mod 2 = 1]) 
+return ('Titres : ', $title, 'Descriptions : ', $description) 

@@ -1,0 +1,40 @@
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href='BAO4.css'>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <title>BAO4</title>
+    </head>
+    <body>
+        <div id="nav" onmouseout="$('#menu').hide();" onmouseover="$('#menu').show();">
+        <div id="dropdown">▼</div>
+        <ul id="menu">
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../main.html">Document Structuré</a></li>
+        <li><a href="./main.html">BAO – Accueil</a></li>
+        </ul>
+        </div>
+        <div id="body">
+            <h1>BAO4 – Des textes aux graphes</h1>
+            <p>La dernière partie de ce projet va nous permettre de générer des graphiques à partir des fichiers que nous avons construits. Plus particulièrement, nous allons utiliser le fichier <a href="./Scripts/BAO/BAO4/corpus-titre-description.udpipe.xml" download="corpus-titre-description.udpipe.xml">corpus-titre-description.udpipe.xml</a> que nous avons créé lors de la BàO précédente afin de visualiser ces données à partir d'un graphe.</p>
+            <br>
+            <h1>Code Python</h1>
+            <p>Ce script se lance de cette manière : <i>python3 BAO4.py corpus-titre-description.udpipe.xml| curl -X POST -H 'Content-Type: text/csv' --data-binary @- "https://padagraph.magistry.fr/post_csv/graphe-culture"</i>.</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO4/BAO4.py" title="Script Python BAO4" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>On pourrait également potentiellement afficher les résultats du programme dans un fichier texte (<a href="/Scripts/BAO/BAO4/objet.txt">objet.txt</a>) : <i>python3 BAO4.py corpus-titre-description.udpipe.xml > objet.txt</i>. Ce format correspond en fait à un format .csv, le format nécéssaire pour afficher le graphe sur padagraph.</p>
+            <br>
+            <img src="./Scripts/BAO/BAO4/images/objet.png">
+            <br>
+            <p>Enfin, voici à quoi ressemble le graphe final généré sur padagraph :</p>
+            <br>
+            <video autoplay muted loop width="100%" heigth="100%">
+              <source src="./Scripts/BAO/BAO4/images/graph.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas le tag vidéo.
+            </video>
+            <br>
+        </div>
+    </body>
+</html>

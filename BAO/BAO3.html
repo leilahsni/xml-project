@@ -1,0 +1,57 @@
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href='BAO1.css'>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <title>BAO3</title>
+    </head>
+    <body>
+        <div id="nav" onmouseout="$('#menu').hide();" onmouseover="$('#menu').show();">
+        <div id="dropdown">▼</div>
+        <ul id="menu">
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../main.html">Document Structuré</a></li>
+        <li><a href="./main.html">BAO – Accueil</a></li>
+        </ul>
+        </div>
+        <div id="body">
+            <h1>BAO3 – Extraction de patrons morphosyntaxiques/relations de dépendances</h1>
+            <p>La troisième Boite à Outils consiste à extraire des patrons morphosyntaxiques et des relations de dépendance à partir des fichiers que nous avons étiqueté lors de la Boite à Outils 2. Grâce au fichier BAO3.pl, nous allons pouvoir récupérer des patrons morphosyntaxique dans un fichier texte intitulé <a href="./Scripts/BAO/BAO3/perlIsTheBigOne.txt" download="perlIsTheBigOne.txt">perlIsTheBigOne.txt</a>. Ces patrons vont être comptés et classés par ordre descendant d'occurrences dans le fichier de sortie.</p>
+            <br>
+            <h1>Code Perl : BAO3.pl – Extraction des patrons</h1>
+            <p>En entrée, ce script prend le fichier <a href="./Scripts/BAO/BAO3/corpus-titre-description.xml" download="corpus-titre-description.xml">corpus-titre-description.xml</a> ainsi que le patron morphosyntaxique recherché (ex. NOM ADJ, DET ADJ NOM, etc.) On lance le script de cette façon : <i>BAO3.pl corpus-titre-description.xml [patron]</i>. Ici, nous allons chercher les patrons NOM-ADJ : <i>BAO3.pl corpus-titre-description.xml NOM ADJ</i>. En sortie, nous récupérons le fichier perlIsTheBigOne.txt.</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO3/BAO3.pl" title="Script Perl BAO3" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>Et voila à quoi ressemble le fichier de sortie :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO3/images/perlIsTheBigOne.png">
+            <br>
+            <h1>Code Perl : extract-relation-udpipe.pl – Extraction des relations de dépendances</h1>
+            <p>On peut ensuite utiliser le fichier <a href="./Scripts/BAO/BAO3/corpus-titre-description.udpipe" download="corpus-titre-description.udpipe">corpus-titre-description.udpipe</a> que nous avons créer lors de la BàO2 et le mettre au format XML grace au fichier <a href="./Scripts/BAO/BAO3/udpipe2xml.pl" download="udpipe2xml.pl">udpipe2xml.pl</a> : <i>perl udpipe2xml.pl corpus-titre-description.udpipe</i>. En sortie, nous obtenons un fichier XML :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO3/images/corpus-titre-description.udpipe.xml.png">
+            <br>
+            <p>Nous pouvons ensuite utiliser notre nouveau fichier corpus-titre-description.udpipe.xml afin de récupérer les relations de dépandances. Pour cela, nous utilisons le script <a href="./Scripts/BAO/BAO3/extract-relation-udpipe.pl" download="extract-relation-udpipe.pl">extract-relation-udpipe.pl</a>. Dans le terminal, nous pouvons écrire : <i>perl extract-relation-udpipe.pl corpus-titre-description.udpipe.xml [relation] > [sortie]</i>. Ici, nous avons choisit la relation objet ("obj") et notre fichier de sortie sera <a href="./Scripts/BAO/BAO3/relations_dependance.txt" download="relations_dependance.txt">relations_dependance.txt</a> : <i>perl extract-relation-udpipe.pl corpus-titre-description.udpipe.xml "obj" > relations_dependance.txt</i>.</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO3/extract-relation-udpipe.pl" title="Script Perl extract-relation-udpipe.pl" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>Et voici le fichier relations_dependance.txt :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO3/images/relations_dependance.png">
+            <br>
+            <br>
+            <h1>Code Python</h1>
+            <p>Pour cette BàO3, le script Python nous permet d'effectuer la même tâche que le script Perl BAO3.pl : il nous permet de récupérer des patrons morphosyntaxiques à partir de notre fichier corpus-titre-description.xml. Ce script se lance de cette façon : <i>python3 BAO3.py corpus-titre-description.xml [patron] > [sortie]</i>. Ici, nous allons chercher les patrons NOM-PRP-NOM et mettre un fichier de sortie nommé <a href="./Scripts/BAO/BAO3/pattern.txt" download="pattern.txt">pattern.txt</a> : <i>python3 BAO3.py corpus-titre-description.xml NOM PRP NOM > pattern.txt</i>.</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO3/BAO3.py" title="BAO2.py" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>Voici un apperçu du fichier texte :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO3/images/pattern.png">
+        </div>
+    </body>
+</html>

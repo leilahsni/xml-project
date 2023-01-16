@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width:100%;
+    height:100%;
+    text-align:center;
+    border-collapse:collapse;
+    color:white
+}
+
+.BAO a{
+    cursor:pointer;
+    font-size:25px;
+    font-family:'Raleway', 'Georgia', 'Sans-serif';
+    text-decoration:none;
+    color:white;
+}
+
+.BAO:hover td {
+    transition-duration: 500ms;
+    background-color:#e6e5e3;
+}
+
+.BAO a:hover{
+    color:#3d7187;
+    transition-duration: 500ms;
+}
+
+#BAO1{
+    background:#B4CFB0;
+}
+
+#BAO2{
+    background-color:#94B49F;
+}
+
+#BAO3{
+    background-color:#789395;
+}
+
+#BAO4{
+    background:#63797a;
+}
+
+#BAO5{
+    background:#516363;
+}
+
+#menu {
+    text-align: center;
+    background-color: #c5e0c1;
+    color: white;
+    font-family: 'Raleway', 'Georgia', 'Sans-serif';
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+
+#dropdown {
+    color: white;
+    background-color: #c5e0c1;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+
+#menu > li {
+    display: inline;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+}
+
+#menu > li:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-family: 'Raleway', 'Georgia', 'Sans-serif';}
+
+a:hover{
+    color:#454f43;
+    transition-duration: 500ms;
+}

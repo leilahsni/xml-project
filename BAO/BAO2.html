@@ -1,0 +1,52 @@
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href='BAO1.css'>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <title>BAO2</title>
+    </head>
+    <body>
+        <div id="nav" onmouseout="$('#menu').hide();" onmouseover="$('#menu').show();">
+        <div id="dropdown">▼</div>
+        <ul id="menu">
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../main.html">Document Structuré</a></li>
+        <li><a href="./main.html">BAO – Accueil</a></li>
+        </ul>
+        </div>
+        <div id="body">
+            <h1>BAO2 – Etiquetage</h1>
+            <p>Pour cette deuxième partie, nous reprenons le code que nous avons créer pour la BàO1 mais nous le modifions pour pouvoir créer des fichiers taggés en sortie. Nous utilisons deux programmes d'étiquetages différents pour le fichier texte et le fichier XML. Pour le fichier texte, nous utilisons Udpipe. Pour le fichier XML, nous utilisons TreeTagger. Encore une fois, nous avons deux scripts : un script Perl et un script Python, qui serons commentés ci-dessous.</p>
+            <br>
+            <h1>Code Perl</h1>
+            <p>On lance le script de cette façon : <i>perl BAO2.pl ../2021 3246</i>. En sortie, nous récupérons deux fichiers : <a href="./Scripts/BAO/BAO2/corpus-titre-description.udpipe" download="corpus-titre-description.udpipe">corpus-titre-description.udpipe</a> (qui correspond au fichier CONLL étiqueté par Udpipe) et <a href="./Scripts/BAO/BAO2/corpus-titre-description.xml" download="corpus-titre-description.xml">corpus-titre-description.xml</a> (qui correspond au fichier XML étiqueté par TreeTagger).</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO2/BAO2.pl" title="Script Perl BAO2" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>En sortie, nous obtenons deux fichiers qui ressemblent à ceci :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO2/images/udpipe-perl.png">
+            <br>
+            <br>
+            <img src="./Scripts/BAO/BAO2/images/corpus-titre-description.png">
+            <h1>Code Python</h1>
+            <p>Le script Python est en fait composé de deux scripts, un qui nous servera de module à importer et l'autre qui servira de script principal. Le module à importer est plutôt simple : il permet de ressortir deux fichiers annotés, un fichier texte et un fichier XML. Il fait donc la même chose que le fichier Perl que j'ai présenté au-dessus. Le fichier BAO2.py, lui, est un hybrique entre le script de la BàO1 et le script extract_un_fil_udpipe.py. Afin de lancer le script, nous pouvons taper dans la ligne de commande : <i>python3 BAO2.py ../2021 3246 xml_output.xml txt_output.txt</i>. En sortie, nous obtenons un fichier <a href="./Scripts/BAO/BAO2/xml_output.xml" download="xml_output.xml">xml_output.xml</a> et un fichier <a href="./Scripts/BAO/BAO2/txt_output.txt" download="txt_output.txt">txt_output.txt</a>.</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO2/BAO2.py" title="BAO2.py" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>La fonction utilisée dans BAO2.py est définie dans le fichier extract_un_fil_udpipe.py :</p>
+            <br>
+            <iframe src="./Scripts/BAO/BAO2/extract_un_fil_udpipe.py" title="extract_un_fil_udpipe.py" width="100%" height="100%"></iframe>
+            <br>
+            <br>
+            <p>En résultat, nous obtenons un fichier XML et un fichier texte :</p>
+            <br>
+            <img src="./Scripts/BAO/BAO2/images/xml_output.png">
+            <br>
+            <br>
+            <img src="./Scripts/BAO/BAO2/images/txt_output.png">
+        </div>
+    </body>
+</html>

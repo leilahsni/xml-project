@@ -1,0 +1,6 @@
+<rel>{
+for $dep in collection('corpus-titre-description.udpipe')//p/item/a[8][text()='obj']
+let $position := $dep/preceding-sibling::a[1]
+let $gov := $dep/ancestor::p/item/a[1][text()=$position]
+return <item>{concat($dep/preceding-sibling::a[6], ' --[obj]-- ', $gov/following-sibling::a[1])}</item>
+}</rel>

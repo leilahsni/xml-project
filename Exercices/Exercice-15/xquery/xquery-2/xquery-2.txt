@@ -1,0 +1,8 @@
+for $item in collection('baseTrameurFromRhapsodie')//item
+where $item/contains(a[7],'OBJ')
+let $word := $item/f/text()
+let $position := substring-before(substring-after($item/a[7]/text(), 'OBJ('), ')')
+let $next_word := //item[@type='forme'][@pos=$position]/f/text()
+let $next_word_lemma := //item[@pos=$position]/l/text()
+let $lemma := $item/l/text()
+return concat($next_word, ' (lemme: ', $next_word_lemma, ') --> ', $word, ' (lemme: ', $lemma, ')')

@@ -1,0 +1,13 @@
+<xquery-3> {
+for $item in collection('3208-2017-v2.xml')//item
+let $word := $item/titre/article/element/data[@type='string']
+let $title := string-join($word,' ')
+let $word := $item/description/article/element/data[@type='string']
+let $description := string-join($word, ' ')
+return
+<item>
+  <title>{$title}</title>
+  <description>{$description}</description>
+</item> 
+}
+</xquery-3>
